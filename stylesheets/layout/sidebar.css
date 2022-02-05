@@ -1,0 +1,108 @@
+@import url(../stylesheets/base/root-variables.css);
+@import url(../stylesheets/base/reset.css);
+@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+
+
+.sidebar-container{
+    width: 18rem;
+    height: 100vh;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-right: 2px solid var(--dark-primary-color);
+    box-shadow: var(--box-shadow-btn);
+}
+
+.burger-menu-button {
+    display: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: none;
+    width: 2rem;
+    background-color: var(--bg-color-primary);
+  }
+
+.close-btn {
+    display: none;
+  }
+
+
+.list-topic{
+    padding: 0.5rem;
+    margin-top: .5rem;
+    font-weight: 500;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-topic a{
+    color: var(--sidebar-list-topic);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+
+.list-subtopic{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color : var(--nav-list-color);
+
+}
+
+.list-subtopic a{
+    font-size: 1.2rem;
+    list-style: none;
+    padding: .4rem .7rem;
+    font-weight: 400;
+    color : var(--list-topic-color);
+}
+
+.list-subtopic .active{
+    color: var(--active-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.list-subtopic a:hover{
+    color: var(--active-color);
+    border-bottom: 2px solid var(--active-color);
+}
+
+@media only screen and (max-width : 880px) {
+    .sidebar-container {
+      width: 50%;
+      left: -100rem;
+      justify-content: center;
+      background-color: var(--doc-section-color);
+      position: fixed;
+      box-shadow: var(--box-shadow-btn);
+      transition: all 0.5s ease-in-out;
+      border: none;
+      height: 100%;
+    }
+   
+    .show-sidebar {
+      top: 0;
+      left: 0;
+    }
+
+    .burger-menu-button {
+      display: block;
+    }
+  
+    .close-btn {
+      display: block;
+      color: var(--primary-color);
+      background-color: var(--doc-section-color);
+      border: none;
+      font-size: 1.6rem;
+      margin-left: auto;
+    }
+  }

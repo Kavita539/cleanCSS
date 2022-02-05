@@ -1,0 +1,22 @@
+@import url(../stylesheets/layout/code-container.css);
+
+.code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    overflow: hidden;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--code-container-color);
+    border-radius: 0.3rem;
+  }
+
+
+  .code-container iframe {
+    width: 100%;
+    border: none;
+  }
+
+  
+  
