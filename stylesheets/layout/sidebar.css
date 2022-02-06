@@ -30,11 +30,11 @@
 
 
 .list-topic{
-    padding: 0.5rem;
-    margin-top: .5rem;
+    padding: var(--padding-xs);
+    margin-top: var(--margin-xs);
     font-weight: 500;
     border-bottom: 1px solid #d9d9d9;
-    margin-bottom: .5rem;
+    margin-bottom: var(--margin-xs);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -59,7 +59,7 @@
 .list-subtopic a{
     font-size: 1.2rem;
     list-style: none;
-    padding: .4rem .7rem;
+    padding: var(--padding-xxs) var(--padding-xs);
     font-weight: 400;
     color : var(--list-topic-color);
 }

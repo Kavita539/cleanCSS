@@ -1,13 +1,13 @@
 .alert{
     width: 100%;
     border-radius: 4px;
-    padding: 1rem 1.5rem;
+    padding: var(--padding-sm) var(--padding-md);
     margin: .5rem 0;
     font-size: 1rem;
 }
 
 .alert-icon{
-    margin-right: 0.625rem;
+    margin-right: var(--margin-xs);
     width: 1rem;
     height: 1rem;
 }

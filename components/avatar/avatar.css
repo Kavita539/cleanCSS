@@ -10,7 +10,7 @@
 .avatar {
     border-radius: 50%;
     border: 2px solid var(--nav-list-color);
-    margin: 0 1rem;
+    margin: 0 var(--margin-sm);
 }
 
 .avatar-txt{
