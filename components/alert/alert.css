@@ -19,17 +19,17 @@
 
 .alert-success{
     background-color: var(--success-color);
-    color: var(--alert-success);
+    color: var(--secondary-color);
 }
 
 .alert-warning{
     background-color: var(--warning-color);
-    color: var(--alert-warning);
+    color: var(--secondary-color);
 }
 
 .alert-error{
     background-color: var(--danger-color);
-    color: var(--alert-danger);
+    color: var(--secondary-color);
 }
 
 /* Outlined Alert */
