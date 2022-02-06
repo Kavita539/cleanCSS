@@ -22,6 +22,15 @@
 
     --secondary-color: #F3F4F6;
     --active-color: #6366f1;
+    --success-color: #4CAF50;
+    --warning-color: #FF9800;
+    --danger-color: #F44336;
+
+    --pure-white: white;
+
+    --alert-success: #065f46;
+    --alert-warning: #ea580c;
+    --alert-danger: #b91c1c;
 
     --doc-heading: #333333;
     --doc-section-color: #e6e6e6;

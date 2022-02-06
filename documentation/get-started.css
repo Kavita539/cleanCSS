@@ -72,6 +72,10 @@
     color: var(--primary-color);
 }
 
+.alert-container{
+   flex-direction: column;
+}
+
 .component-example-div{
     box-shadow: var(--box-shadow-doc);
     border-radius: 4px;
