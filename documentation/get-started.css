@@ -48,11 +48,18 @@
 .content-para{
     line-height: 1.4rem;
     color : var(--doc-heading);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
+.content-note{
+    line-height: 1.4rem;
+    color : var(--doc-heading);
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
 
 .divider{
     margin-bottom: 1.5rem;
@@ -61,8 +68,27 @@
     background-color: #dadadaf3;
 }
 
+.primary-txt-color{
+    color: var(--primary-color);
+}
 
-@media screen and (max-width : 800px){
+.component-example-div{
+    box-shadow: var(--box-shadow-doc);
+    border-radius: 4px;
+    background-color: var(--doc-section-color);
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+
+}
+    
+
+@media screen and (max-width : 1024px){
     .doc-content{
         margin: auto;
         width: 90%;
@@ -80,8 +106,7 @@
     .content-head{
         font-size: 1.3rem;
     }
-
-
+     
     .contet-para{
         font-size: 0.9rem;
         margin-bottom: 1rem;

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Avatar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="avatar.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539"> <i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a class="active" href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">Avatar</div>
+                    <div class="content-para">Avatar is used to represent a user, and displays the profile picture,
+                        initials or fallback icons. They are usually found in circular shapes.</div>
+                    <div class="divider"></div>
+
+                    <!-- PROFILE AVATAR -->
+                    <div class="content-head">Profile Avatar</div>
+                    <div class="content-para">Profile Avatars can be created using the class 'avatar', inside the img
+                        tag. Available in four different shapes from xs to large.
+                    </div>
+                    <div class="component-example-div">
+                        <div class="avatar avatar-lg"><img class="responsive-img round-img"
+                                src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                alt="avatar-lg">
+                        </div>
+                        <div class="avatar avatar-md"><img class="responsive-img round-img"
+                                src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                alt="avatar-md">
+                        </div>
+                        <div class="avatar avatar-sm"><img class="responsive-img round-img"
+                                src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                alt="avatar-sm">
+                        </div>
+                        <div class="avatar avatar-xs"><img class="responsive-img round-img"
+                                src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                alt="avatar-xs">
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <code>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-lg%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%2520%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-md%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%2520%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-sm%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%2520%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-xs%2522%253E%250A%253C%252Fdiv%253E%2520%2520"
+                            style="width: 1024px; height: 467px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                        </code>
+                    </div>
+                   <div class="divider"></div>
+                    
+                   <!--Text AVATAR -->
+                   <div class="content-head">Text Avatar</div>
+                   <div class="content-para">You can use initials of user in Avatar as well. You need to include class <span class="primary-txt-color">avatar-txt</span> along with <span class="primary-txt-color">avatar</span> and size class. (e.g. <span class="primary-txt-color">class="avatar avatar-lg avatar-txt"</span>)
+                   </div>
+                   <div class="component-example-div">
+                       <div class="avatar avatar-lg avatar-txt" role="img" alt="avatar-lg">KP
+                       </div>
+                       <div class="avatar avatar-md avatar-txt" role="img" alt="avatar-md">KP
+                       </div>
+                       <div class="avatar avatar-sm avatar-txt" role="img" alt="avatar-sm">KP
+                       </div>
+                       <div class="avatar avatar-xs avatar-txt" role="img" alt="avatar-xs">KP
+                       </div>
+                   </div>
+
+                   <div class="code-container">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-txt%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar-lg%2522%253EKP%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-txt%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar-md%2522%253EKP%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-txt%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar-sm%2522%253EKP%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-txt%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar-xs%2522%253EKP%253C%252Fdiv%253E%2520%2520"
+                    style="width: 790px; height: 243px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="/js/sidebar.js"></script>
+</body>
+
+</html>
