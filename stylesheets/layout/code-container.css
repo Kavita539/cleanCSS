@@ -1,22 +1,28 @@
 @import url(../stylesheets/layout/code-container.css);
 
 .code-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 97%;
-    overflow: hidden;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: var(--code-container-color);
-    border-radius: 0.3rem;
+  position: relative;
+  padding-top: 56.25%;
+  /* padding-top: 30px; */
+  /* padding: 12rem 0; */
+  margin: 2rem 0;
+  width: 100%;
+  /* height: 0; */
+  overflow: auto;
+  /* background-color: var(--code-container-color); */
+  border-radius: 0.3rem;
   }
 
 
   .code-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     border: none;
   }
 
   
+
   

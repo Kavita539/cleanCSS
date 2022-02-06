@@ -75,7 +75,7 @@
     border-bottom: 2px solid var(--active-color);
 }
 
-@media only screen and (max-width : 880px) {
+@media only screen and (max-width : 1024px) {
     .sidebar-container {
       width: 50%;
       left: -100rem;
