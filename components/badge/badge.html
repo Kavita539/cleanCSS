@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Badge</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="badge.css">
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539"> <i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">Badge</div>
+                    <div class="content-para">Badges are being used to display a notification count or status
+                        information. They are small circles, positioned either at top-right or bottom-right of the
+                        parent component</div>
+                    <div class="divider"></div>
+
+                    <!-- STATUS BADGE -->
+                    <div class="content-head">Profile Badge</div>
+                    <div class="content-para">Profile Badge is used to show the current status of a user.
+                    </div>
+                    <div class="content-note">Note : It can be used with 3 variants : online | offline | dnd</div>
+                    <div class="component-example-div">
+                        <div class="badge">
+                            <div class="avatar avatar-sm"><img class="responsive-img round-img"
+                                    src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                    alt="avatar-sm">
+                            </div>
+                            <span class="profile-badge online-badge"></span>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-sm"><img class="responsive-img round-img"
+                                    src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                    alt="avatar-sm">
+                            </div>
+                            <span class="profile-badge offline-badge"></span>
+                        </div>
+                        <div class="badge">
+                            <div class="avatar avatar-sm"><img class="responsive-img round-img"
+                                    src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                    alt="avatar-sm">
+                            </div>
+                            <span class="profile-badge dnd-badge"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="code-container">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%250A%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-sm%2522%253E%250A%2520%253C%252Fdiv%253E%2520%253Cspan%2520class%253D%2522profile-badge%2520online-badge%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%250A%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-sm%2522%253E%250A%2520%253C%252Fdiv%253E%2520%253Cspan%2520class%253D%2522profile-badge%2520offline-badge%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%253Cimg%2520class%253D%2522responsive-img%2520round-img%2522%250A%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar-sm%2522%253E%250A%2520%253C%252Fdiv%253E%2520%253Cspan%2520class%253D%2522profile-badge%2520dnd-badge%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 926px; height: 467px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--NUMMBER BADGE -->
+                    <div class="content-head">Number Badge</div>
+                    <div class="content-para">Number Badge is used to show the no. of items present in the parent
+                        component
+                    </div>
+                    <div class="component-example-div">
+                        <div class="badge">
+                            <img class="avatar-badge" src="/assets/svg/house-solid.svg" alt="avatar">
+
+                            <div class="number">15</div>
+                        </div>
+
+                        <div class="badge">
+                            <img class="avatar-badge" src="/assets/svg/cart-shopping-solid.svg" alt="avatar">
+
+                            <div class="number">15</div>
+                        </div>
+
+                        <div class="badge">
+                            <img class="avatar-badge" src="/assets/svg/envelope-solid.svg" alt="avatar">
+
+                            <div class="number">15</div>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%2520%253Cimg%2520class%253D%2522avatar-badge%2522%2520src%253D%2522%252Fassets%252Fsvg%252Fhouse-solid.svg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%253Cdiv%2520class%253D%2522number%2522%253E15%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%2520%253Cimg%2520class%253D%2522avatar-badge%2522%2520src%253D%2522%252Fassets%252Fsvg%252Fcart-shopping-solid.svg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%253Cdiv%2520class%253D%2522number%2522%253E15%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%2520%253Cimg%2520class%253D%2522avatar-badge%2522%2520src%253D%2522%252Fassets%252Fsvg%252Fenvelope-solid.svg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%253Cdiv%2520class%253D%2522number%2522%253E15%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 985px; height: 337px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="/js/sidebar.js"></script>
+</body>
+
+</html>
