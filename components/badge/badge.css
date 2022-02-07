@@ -13,20 +13,20 @@
 
 }
 
-.badge .online-badge{
+ .online-badge{
     background-color: var(--success-color);
 }
 
-.badge .offline-badge{
+ .offline-badge{
     background-color: var(--grey);
 }
 
-.badge .dnd-badge{
+ .dnd-badge{
     background-color: var(--danger-color);
 }
 
 
-.badge .number{
+ .badge-number{
     display: flex;
     justify-content: center;
     align-items: center;
