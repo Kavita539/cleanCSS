@@ -21,6 +21,7 @@
     --box-shadow-doc: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
 
     --secondary-color: #F3F4F6;
+    --default-color: #172B4D;
     --active-color: #6366f1;
     --success-color: #4CAF50;
     --warning-color: #FF9800;
@@ -28,14 +29,17 @@
 
     --pure-white: white;
     --grey: grey;
+    --black: black;
 
     --doc-heading: #333333;
-    --doc-section-color: #e6e6e6;
+    --doc-section-color: #c5c7d1;
     --code-container-color: #FAFAFA;
     --divider-color: #dadadaf3;
 
     --primary-hover: #4F46E5;
     --secondary-hover: #E5E7EB;
+    --danger-hover: #d31609;
+    --success-hover: #0d8611;
 
     --padding-xxxs: .3rem;
     --padding-xxs: .4rem;

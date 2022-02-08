@@ -1,0 +1,115 @@
+.btn{
+    font-weight: 600;
+    background: var(--default-color);
+    color: var(--pure-white);
+    min-width: 6rem;
+    width: max-content;
+    padding: 0.8rem var(--padding-sm);
+    border-radius: 1px;
+    border: none;
+    transition: all .3s ease-in-out;
+    margin: 10px;
+}
+
+.text-icon-btn{
+    background-color: var(--active-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link-btn{
+    background-color: var(--active-color);
+    color: var(--pure-white);
+}
+
+.btn-primary{
+    background-color : var(--primary-color);
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color : var(--black);
+}
+
+.btn-error{
+    background-color: var(--danger-color);
+}
+
+.btn-success{
+    background-color: var(--success-color);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary:hover{
+    background-color: var(--secondary-hover);
+}
+
+.btn-error:hover{
+    background-color: var(--danger-hover);
+}
+
+.btn-success:hover{
+    background-color: var(--success-hover);
+}
+
+.outline-btn{
+    background-color: var(--doc-section-color);
+    border: 1px solid var(--default-color);
+    color : var(--default-color);
+}
+
+.outline-btn-primary{
+    background-color: var(--doc-section-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
+}
+
+.outline-btn-secondary{
+    background-color: var(--doc-section-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.outline-btn-error{
+    background-color: var(--doc-section-color);
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+}
+
+.outline-btn-success{
+    background-color: var(--doc-section-color);
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.outline-btn-primary:hover{
+    background-color: var(--primary-color);
+    color: var(--pure-white);
+}
+
+.outline-btn-secondary:hover{
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+
+.outline-btn-error:hover{
+    background-color: var(--danger-color);
+    color: var(--pure-white);
+}
+
+.outline-btn-success:hover{
+    background-color: var(--success-color);
+    color: var(--pure-white);
+}
+
+.text-icon-btn:hover,.btn-link:hover{
+    background-color: var(--primary-color);
+}
+
+
+
