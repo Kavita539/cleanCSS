@@ -2,7 +2,7 @@
     width: 100%;
     border-radius: 4px;
     padding: var(--padding-sm) var(--padding-md);
-    margin: .5rem 0;
+    margin: var(--margin-xs) 0;
     font-size: 1rem;
 }
 
