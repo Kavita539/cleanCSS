@@ -1,7 +1,7 @@
 .btn{
     font-weight: 600;
     background: var(--default-color);
-    color: white;
+    color: var(--pure-white);
     min-width: 6rem;
     width: max-content;
     padding: 0.8rem var(--padding-sm);
@@ -60,7 +60,7 @@
 .outline-btn{
     background-color: var(--doc-section-color);
     border: 1px solid var(--default-color);
-    color : var(--default-color)
+    color : var(--default-color);
 }
 
 .outline-btn-primary{
