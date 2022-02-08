@@ -8,7 +8,7 @@
     position: absolute;
     height: 12px;
     width: 12px;
-    border-radius: 50%;
+    border-radius: var(--rounded-border);
     border: 2px solid white;
 
 }
@@ -40,7 +40,7 @@
     width: 18px;
     border: none;
     background-color: var(--primary-color);
-    border-radius: 50%;
+    border-radius: var(--rounded-border);
 }
 
 

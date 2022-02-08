@@ -7,7 +7,7 @@
 .round-img{
     height: 10rem;
     width: 10rem;
-    border-radius: 50%;
+    border-radius: var(--rounded-border);
     margin: 10px;
     object-fit: cover;
 }

@@ -4,11 +4,11 @@
 }
 
 .round-img {
-    border-radius: 50%;
+    border-radius: var(--rounded-border);
 }
 
 .avatar {
-    border-radius: 50%;
+    border-radius: var(--rounded-border);
     border: 2px solid var(--nav-list-color);
     margin: 0 var(--margin-sm);
 }
