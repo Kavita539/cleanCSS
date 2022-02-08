@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Image</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539"> <i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">Responsive Image</div>
+                    <div class="content-para">Responsive Image Components are used to dsiplay Images on websites, which
+                        are screen responsive. They expand upto the width of the container they are in and can be in
+                        round shape too.
+
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--SQUARE IMAGE-->
+                    <div class="content-head">Full Width Image</div>
+                    <div class="content-para">Full Width Image is the one that expands to cover the container it is
+                        present in.
+                        <div class="content-note">Note : Resize the browser window, to see the responsive property of
+                            the image.</div>
+                    </div>
+                    <div class="component-example-div">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1643555309489-602313c96a4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1793&q=80"
+                                alt="responsive-image" class="responsive-img">
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%2520%253Cimg%2520src%253D%2522url-of-image%2522%2520alt%253D%2522responsive-image%2522%2520class%253D%2522responsive-img%2522%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--ROUND IMAGE-->
+                    <div class="content-head">Round Image</div>
+                    <div class="content-para">Round Images are in round shape.
+
+                    </div>
+                    <div class="component-example-div">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1643555309489-602313c96a4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1793&q=80"
+                                alt="round-image" class="round-img">
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1642617173508-3d43f1d5f3ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fGRpanBidzk5a1FRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="round-image" class="round-img">
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%2520%253Cimg%2520src%253D%2522url-of-the-image1%2522%2520alt%253D%2522round-image%2522%2520class%253D%2522round-img%2522%253E%2520%253C%252Fdiv%253E%250A%253Cdiv%253E%2520%253Cimg%2520src%253D%2522url-of-the-image2%2522alt%253D%2522round-image%2522%2520class%253D%2522round-img%2522%253E%2520%2520%253C%252Fdiv%253E"
+                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="/js/sidebar.js"></script>
+</body>
+
+</html>
