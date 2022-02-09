@@ -98,6 +98,13 @@
     flex-wrap: wrap;
     margin: 0 auto;
 }
+
+.stacked-list-container {
+    margin: 0 auto;
+    border: 2px solid var(--doc-section-color);
+    border-radius: 0.3rem;
+    padding: 0 var(--padding-sm);
+  }
   
 .component-example-div{
     box-shadow: var(--box-shadow-doc);

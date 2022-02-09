@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clean.CSS | Inputs</title>
+    <title>clean.CSS | Lists</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="stylesheet" href="/documentation/get-started.css">
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
 </head>
 
 <body>
@@ -77,48 +78,44 @@
                             <a href="/components/image/image.html">Image</a>
                         </li>
                         <li>
-                            <a class="active" href="/components/input/input.html">Input</a>
+                            <a href="/components/input/input.html">Input</a>
                         </li>
                         <li>
-                            <a href="/components/textUtilities/textUtilities.html">Input</a>
+                            <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
                         </li>
                         <li>
-                            <a href="/components/list/list.html">Input</a>
+                            <a class="active" href="/components/list/list.html">List</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div id="doc-content" class="doc-content">
                 <div class="wrapper-shadow">
-                    <div class="content-title">Input</div>
-                    <div class="content-para">Inputs are necessary for user interaction with the website. Inputs are
-                        used to take information from the user, and then save the data to the server, accordingly..
+                    <div class="content-title">List</div>
+                    <div class="content-para">Lists are continuous, vertical indexes of text or images. They are
+                        composed of items containing primary and supplemental actions, which are represented by icons
+                        and text.
                     </div>
                     <div class="divider"></div>
 
-                    <!--SIMPLE INPUTS-->
-                    <div class="content-head">Simple Inputs</div>
-                    <div class="content-para">Simple Input is where user can enter something in the input field and can
-                        also havea label present at the top of the input field.
-                        They can be customized to show error error-message, and change color accordingly.
+                    <!--simple list-->
+                    <div class="content-head">Simple List</div>
+                    <div class="content-para">Simple list is the most common used list style.
                     </div>
                     <div class="component-example-div">
-                        <div class="input-grp">
-                            <label class="form-label form-label-mandatory">Email</label>
-                            <input class="form-field" type="email" placeholder="example@xyz.com" required />
-                        </div>
-
-                        <div class="input-grp">
-                            <label class="form-label">TextArea</label>
-                            <textarea class="form-field" cols="30" rows="2"
-                                placeholder="write your thoughts here..."></textarea>
-                        </div>
+                        <ul class="styled-list">
+                            <div class="list-title">Categories</div>
+                            <li>Home</li>
+                            <li>Shoes</li>
+                            <li>Bag</li>
+                            <li>Accessories</li>
+                        </ul>
                     </div>
 
                     <div class="code-container">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-grp%2522%253E%2520%253Clabel%2520class%253D%2522form-label%2520form-label-mandatory%2522%253EEmail%253C%252Flabel%253E%250A%2520%253Cinput%2520class%253D%2522form-field%2522%2520type%253D%2522email%2522%2520placeholder%253D%2522example%2540xyz.com%2522%2520required%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-grp%2522%253E%2520%253Clabel%2520class%253D%2522form-label%2522%253ETextArea%253C%252Flabel%253E%250A%2520%253Ctextarea%2520class%253D%2522form-field%2522%2520cols%253D%252230%2522%2520rows%253D%25222%2522%2520placeholder%253D%2522write%2520your%2520thoughts%2520here...%2522%253E%250A%2520%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522styled-list%2522%253E%250A%2520%253Cdiv%2520class%253D%2522list-title%2522%253ECategories%253C%252Fdiv%253E%250A%2520%2520%2520%253Cli%253EHome%253C%252Fli%253E%250A%2520%2520%2520%253Cli%253ESmartphones%253C%252Fli%253E%250A%2520%2520%2520%253Cli%253EEarphones%253C%252Fli%253E%250A%2520%2520%2520%253Cli%253EWatches%253C%252Fli%253E%250A%253C%252Ful%253E"
                                 style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
@@ -126,128 +123,81 @@
                     </div>
                     <div class="divider"></div>
 
-                    <!--DISABLED INPUTS-->
-                    <div class="content-head">Disabled Inputs</div>
-                    <div class="content-para">Add disabled attribute to your form element to make them disable.
+                    <!--Nested list-->
+                    <div class="content-head">Nested List</div>
+                    <div class="content-para">Nested lists have list within a list.
                     </div>
                     <div class="component-example-div">
-                        <div class="input-grp">
-                            <label class="form-label form-label-mandatory">Email</label>
-                            <input class="form-field" type="email" placeholder="Disabled Inputs" disabled />
-                        </div>
-
-                        <div class="input-grp">
-                            <label class="form-label">TextArea</label>
-                            <textarea class="form-field" cols="30" rows="2" placeholder="Disabled TextArea"
-                                disabled></textarea>
-                        </div>
+                        <ul class="styled-list">
+                            <div class="list-title">Categories</div>
+                            <li>Home</li>
+                            <li class="collapsable-item">
+                                <div>Shoes</div>
+                                <ul>
+                                    <li>Reebok</li>
+                                    <li>Nike</li>
+                                    <li>Puma</li>
+                                </ul>
+                            </li>
+                            <li>Bags</li>
+                            <li>Accessories</li>
+                        </ul>
                     </div>
 
                     <div class="code-container">
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-grp%2522%253E%2520%253Clabel%2520class%253D%2522form-label%2520form-label-mandatory%2522%253EEmail%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522form-field%2522%2520type%253D%2522email%2522%2520placeholder%253D%2522Disabled%2520Inputs%2522%2520disabled%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-grp%2522%253E%2520%253Clabel%2520class%253D%2522form-label%2522%253ETextArea%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520class%253D%2522form-field%2522%2520cols%253D%252230%2522%2520rows%253D%25222%2522%2520placeholder%253D%2522Disabled%2520TextArea%2522%250A%2520%2520%2520%2520disabled%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522styled-list%2522%253E%250A%2520%253Cdiv%2520class%253D%2522list-title%2522%253ECategories%253C%252Fdiv%253E%250A%2520%2520%2520%253Cli%253EHome%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522collapsable-item%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%253EShoes%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EReebok%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ENike%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EPuma%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%253Cli%253EBags%253C%252Fli%253E%250A%2520%2520%2520%253Cli%253EAccessories%253C%252Fli%253E%250A%253C%252Ful%253E"
                             style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
                     <div class="divider"></div>
 
-                    <!--VALIDATOR INPUTS -->
-                    <div class="content-head">Validator Inputs</div>
-                    <div class="content-para">These inputs are used for validation or error message.
+                    <!--Stacked list-->
+                    <div class="content-head">Stacked list</div>
+                    <div class="content-para">This list group consists of custom made texts in the each list item.
                     </div>
                     <div class="component-example-div">
-                        <div class="input-grp input-grp-success">
-                            <label class="form-label form-label-mandatory">Password</label>
-                            <input class="form-field" type="password" />
-                            <div class="text-message">Strong Password</div>
-                        </div>
-
-                        <div class="input-grp input-grp-error">
-                            <label class="form-label">Password</label>
-                            <input class="form-field" type="password" />
-                            <div class="text-message">Minimum 8 characters required!</div>
+                        <div class="stacked-list-container">
+                            <ul class="no-style-list stacked-list">
+                                <li class="stacked-list-item">
+                                    <div class="avatar avatar-xs">
+                                        <img class="responsive-img rounded-img"
+                                            src="https://avatars.dicebear.com/api/avataaars/qwer.svg" alt="avatar">
+                                    </div>
+                                    <p class="message-text">Hey how you doing?</p>
+                                    <div class="reply-icon"><i class="fas fa-reply"></i></div>
+                                </li>
+                                <li class="stacked-list-item">
+                                    <div class="avatar avatar-xs">
+                                        <img class="responsive-img rounded-img"
+                                            src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg"
+                                            alt="avatar">
+                                    </div>
+                                    <p class="message-text">Did you see the news?</p>
+                                    <div class="reply-icon"><i class="fas fa-reply"></i></div>
+                                </li>
+                                <li class="stacked-list-item">
+                                    <div class="avatar avatar-xs">
+                                        <img class="responsive-img rounded-img"
+                                            src="https://avatars.dicebear.com/api/avataaars/asaadca.svg" alt="avatar">
+                                    </div>
+                                    <p class="message-text">Twas nice meeting you!!</p>
+                                    <div class="reply-icon"><i class="fas fa-reply"></i></div>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
 
                     <div class="code-container">
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-grp%2520input-grp-success%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522form-label%2520form-label-mandatory%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522form-field%2522%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522text-message%2522%253EStrong%2520Password%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-grp%2520input-grp-error%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522form-label%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522form-field%2522%2520type%253D%2522password%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522text-message%2522%253EMinimum%25208%2520characters%2520required%21%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522stacked-list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522no-style-list%2520stacked-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-img%2522%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwer.svg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message-text%2522%253EHey%2520how%2520you%2520doing%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522reply-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-reply%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-img%2522%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fqwerasxqergdsacssfghvsd.svg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message-text%2522%253EDid%2520you%2520see%2520the%2520news%253F%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522reply-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-reply%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-img%2522%2520src%253D%2522https%253A%252F%252Favatars.dicebear.com%252Fapi%252Favataaars%252Fasaadca.svg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message-text%2522%253ETwas%2520nice%2520meeting%2520you%21%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522reply-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-reply%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
                             style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
-                    <div class="divider"></div>
-
-                    <!--RADIO INPUTS -->
-                    <div class="content-head">Radio Inputs</div>
-                    <div class="content-para">Radio buttons allow the user to select one option from a set.
-                    </div>
-                    <div class="component-example-div">
-                        <div class="radio-btn">
-                            <label for="radio-btn-1">
-                                <input id="radio-btn-1" name="radio" type="radio" checked="">
-                                Checked
-                            </label>
-                        </div>
-                        <div class="radio-btn">
-                            <label for="radio-btn-2">
-                                <input id="radio-btn-2" name="radio" type="radio">
-                                Unchecked
-                            </label>
-                        </div>
-                        <div class="radio-btn disabled">
-                            <label for="radio-btn-3">
-                                <input id="radio-btn-3" name="radio" type="radio" disabled="">
-                                Disabled
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="code-container">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522radio-btn%2522%253E%250A%2520%253Clabel%2520for%253D%2522radio-btn-1%2522%253E%250A%2520%253Cinput%2520id%253D%2522radio-btn-1%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520checked%253D%2522%2522%253E%2520Checked%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522radio-btn%2522%253E%250A%2520%253Clabel%2520for%253D%2522radio-btn-2%2522%253E%250A%2520%253Cinput%2520id%253D%2522radio-btn-2%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%253E%2520Unchecked%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522radio-btn%2520disabled%2522%253E%250A%2520%253Clabel%2520for%253D%2522radio-btn-3%2522%253E%250A%2520%253Cinput%2520id%253D%2522radio-btn-3%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520disabled%253D%2522%2522%253E%2520Disabled%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
-                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                    <div class="divider"></div>
-
-                    <!--CHECKBOX INPUTS -->
-                    <div class="content-head">Checkbox Inputs</div>
-                    <div class="content-para">Checkboxes allow the user to select one or more items from a set.
-                        Checkboxes can be used to turn an option on or off.
-                    </div>
-                    <div class="component-example-div">
-                        <div class="checkbox-btn">
-                            <label for="checkbox-btn-1">
-                                <input id="checkbox-btn-1" name="checkbox" type="checkbox" checked="">
-                                Checked
-                            </label>
-                        </div>
-                        <div class="checkbox-btn">
-                            <label for="checkbox-btn-2">
-                                <input id="checkbox-btn-2" name="checkbox" type="checkbox">
-                                Unchecked
-                            </label>
-                        </div>
-                        <div class="checkbox-btn disabled">
-                            <label for="checkboxdio-btn-3">
-                                <input id="checkbox-btn-3" name="checkbox" type="checkbox" disabled="">
-                                Disabled
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="code-container">
-                        <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522checkbox-btn%2522%253E%250A%2520%253Clabel%2520for%253D%2522checkbox-btn-1%2522%253E%250A%2520%253Cinput%2520id%253D%2522checkbox-btn-1%2522%2520name%253D%2522checkbox%2522%2520type%253D%2522checkbox%2522%2520checked%253D%2522%2522%253E%2520Checked%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522checkbox-btn%2522%253E%250A%2520%253Clabel%2520for%253D%2522checkbox-btn-2%2522%253E%250A%2520%253Cinput%2520id%253D%2522checkbox-btn-2%2522%2520name%253D%2522checkbox%2522%2520type%253D%2522checkbox%2522%253E%2520Unchecked%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522checkbox-btn%2520disabled%2522%253E%250A%2520%253Clabel%2520for%253D%2522checkbox-btn-3%2522%253E%250A%2520%253Cinput%2520id%253D%2522checkbox-btn-3%2522%2520name%253D%2522checkbox%2522%2520type%253D%2522checkbox%2522%2520disabled%253D%2522%2522%253E%2520Disabled%250A%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
-  style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-                    </div>
-
+                    
                 </div>
             </div>
         </div>
