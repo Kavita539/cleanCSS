@@ -75,6 +75,30 @@
    flex-direction: column;
 }
 
+.headings-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 0 auto;
+}
+
+.text-alignment-container {
+    width: 100%;
+ }
+
+.text-alignment-container p {
+    width: 100%;
+}
+
+.text-utility-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+  
 .component-example-div{
     box-shadow: var(--box-shadow-doc);
     border-radius: 4px;
