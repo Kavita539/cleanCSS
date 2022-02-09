@@ -1,0 +1,84 @@
+.input-grp {
+    width: 100%;
+    margin: var(--margin-sm) 0 var(--margin-xs);
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: var(--margin-xs);
+}
+
+.form-label-mandatory::after {
+    content: "*";
+    color: var(--danger-color);
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 0.65rem var(--padding-sm);
+    border-radius: var(--padding-xxxs);
+    border: 2px solid var(--doc-section-color);
+    outline: none;
+}
+
+.form-field:focus{
+    box-shadow: var(--form-field-shadow);
+}
+
+/* Disabled Inputs */
+.form-field:disabled{
+  background-color: var(--doc-section-color);
+}
+
+/* Validator Inputs */
+.input-grp-success {
+  color: var(--success-color);
+}
+
+.input-grp-success .form-field{
+  border: 2px solid var(--success-color);
+}
+
+.input-grp-success .form-field:focus{
+  border: 2px solid var(--secondary-color);
+  box-shadow: var(--form-field-shadow);
+}
+
+.input-grp-error {
+  color: var(--danger-color);
+}
+
+.input-grp-error .form-field{
+  border: 2px solid var(--danger-color);
+}
+
+.input-grp-error .form-field:focus{
+  border: 2px solid var(--secondary-color);
+  box-shadow: var(--form-field-shadow);
+}
+
+.text-message {
+  font-size: 0.8rem;
+}
+
+/* Radio and Checkbox */
+.radio-btn label,.checkbox-btn label{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.radio-btn input,.checkbox-btn input{
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.radio-btn.disabled label,.checkbox-btn.disabled label{
+  color:var(--diabled-color);
+}
+
+.radio-btn.disabled input,.checkbox-btn.disabled input{
+  cursor: not-allowed;
+}
