@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     padding-inline-start: 0;
+    padding: var(--padding-sm);
 }
   
 .stacked-list-item {
@@ -61,6 +62,7 @@
     border: 2px solid var(--doc-section-color);
     border-radius: 0.75rem;
     background-color: var(--secondary-color);
+    margin: 0;
 }
   
 .message-text {
@@ -89,6 +91,7 @@
     }
     .stacked-list-item {
       width: 100%;
+      column-gap: 0.2rem; 
       padding: var(--padding-xxxs);
     }
 }
