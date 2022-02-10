@@ -1,0 +1,69 @@
+.navbar{
+    top: 0;
+    z-index: 3;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-lg) var(--padding-xxxs);
+    width: 100%;
+    height: 3.7rem;
+    border-bottom: 2px solid var(--dark-primary-color);
+    box-shadow: var(--box-shadow-btn);
+ }
+ 
+ 
+ .left-navbar{
+     display: flex;
+     justify-content: space-evenly;
+     gap: .5rem;
+     align-items: center;
+  }
+ 
+ .nav-logo-title {
+     font-size: 2rem;
+     font-family: 'Roboto Slab', serif;
+     font-weight: 500;
+     color: var(--primary-color);
+ }
+ 
+ 
+ .nav-logo-tagline {
+     font-size: 0.65rem;
+     font-weight: 500;
+     /* letter-spacing: 1px; */
+     color: var(--light-text-color);
+ }
+ 
+ 
+ .right-navbar{
+    display: flex;
+    justify-content: space-evenly;
+    
+ }
+ 
+ .right-navbar a{
+    color: var(--nav-list-color);
+    font-weight: 300;
+    font-size: 1.4rem;
+ }
+ 
+ .right-navbar a:hover{
+    color: var(--light-primary-color);
+ }
+ 
+ @media only screen and (max-width: 550px){
+     .nav-logo-title{
+         font-size: 1rem;
+     }
+ 
+     .nav-logo-tagline{
+         font-size: 0.3rem;
+         letter-spacing: 0;
+     }
+ 
+     .right-navbar a{
+         font-size: 0.8rem;
+     }
+ } 
+  
+  
