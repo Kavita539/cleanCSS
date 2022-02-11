@@ -6,6 +6,7 @@
     --text-color: #696b79;
     --dark-text-color: #3f4049;
     --light-text-color: #282c3f;
+    --btn-txt-color: rgb(47, 48, 49);
 
     --logo-color: #333;
 
@@ -21,7 +22,8 @@
     --box-shadow-doc: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
     --form-field-shadow: 0 0 0 1px var(--primary-color);
 
-    --secondary-color: #F3F4F6;
+    --secondary-color: #e5ecee;
+    --light-secondary-color: #f0f7f8;
     --default-color: #172B4D;
     --active-color: #6366f1;
     --success-color: #4CAF50;
@@ -32,12 +34,14 @@
 
     --pure-white: white;
     --grey: grey;
+    --lightgrey: #c2c2c2;
     --black: black;
 
     --doc-heading: #333333;
     --doc-section-color: #e7e5ee;
     --code-container-color: #FAFAFA;
     --divider-color: #dadadaf3;
+    --like-color-btn: #adadad;
 
     --primary-hover: #4F46E5;
     --secondary-hover: #E5E7EB;

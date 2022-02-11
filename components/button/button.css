@@ -9,6 +9,7 @@
     border: none;
     transition: all .3s ease-in-out;
     margin: 10px;
+    border-radius: 8px;
 }
 
 .text-icon-btn{
@@ -30,7 +31,7 @@
 
 .btn-secondary{
     background-color: var(--secondary-color);
-    color : var(--black);
+    color : var(--btn-txt-color);
 }
 
 .btn-error{
@@ -61,12 +62,13 @@
     background-color: var(--doc-section-color);
     border: 1px solid var(--default-color);
     color : var(--default-color);
+    border-radius: 8px;
 }
 
 .outline-btn-primary{
     background-color: var(--doc-section-color);
     border: 1px solid var(--primary-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .outline-btn-secondary{
