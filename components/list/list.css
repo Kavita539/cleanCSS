@@ -84,14 +84,40 @@
     box-shadow: var(--box-shadow-color);
 }
 
+/* spaced list */
+.inline-styled-list {
+    display: flex;
+    column-gap: 1rem;
+    padding-inline-start: 0;
+    flex-wrap: wrap;
+}
+
+.inline-styled-list li{
+    border: 2px solid var(--doc-section-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.inline-styled-list li:hover{
+    background-color: var(--doc-section-color);
+    color: var(--black);
+}
+
+/* Media Queries */
 @media only screen and (max-width: 600px) {
     .stacked-list {
       width: 100%;
       font-size: 0.5rem;
     }
+
     .stacked-list-item {
       width: 100%;
       column-gap: 0.2rem; 
       padding: var(--padding-xxxs);
     }
+
+    .inline-styled-list li{
+        font-size: 0.8rem;
+    }
+
 }
