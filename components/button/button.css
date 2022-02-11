@@ -12,19 +12,24 @@
     border-radius: 8px;
 }
 
+/* text icon btn styling */
 .text-icon-btn{
     background-color: var(--active-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    color: var(--secondary-color);
 }
 
+/* link btn styling */
 .link-btn{
     background-color: var(--active-color);
-    color: var(--pure-white);
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
+/* contained btn styling */
 .btn-primary{
     background-color : var(--primary-color);
 }
@@ -42,6 +47,7 @@
     background-color: var(--success-color);
 }
 
+/* contained btn hover styling */
 .btn-primary:hover{
     background-color: var(--primary-hover);
 }
@@ -58,6 +64,7 @@
     background-color: var(--success-hover);
 }
 
+/* outline btn */
 .outline-btn{
     background-color: transparent;
     border: 1px solid var(--default-color);
@@ -89,6 +96,7 @@
     color: var(--success-color);
 }
 
+/* outline btn hover styling */
 .outline-btn-primary:hover{
     background-color: var(--primary-color);
     color: var(--pure-white);
@@ -109,9 +117,39 @@
     color: var(--pure-white);
 }
 
-.text-icon-btn:hover,.btn-link:hover{
-    background-color: var(--primary-color);
+/* text icon btn & link btn hover styling */
+.text-icon-btn:hover,.link-btn:hover{
+    opacity: 0.7;
 }
 
+/* Floating btn */
+.floating-btns{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-floating {
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+  
+.btn-floating:hover {
+    opacity: 0.8;
+}
+  
+.floating-up-arrow-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
 
 
