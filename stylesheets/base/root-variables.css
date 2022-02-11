@@ -21,6 +21,8 @@
     --box-shadow-btn:  rgb(0 0 0 / 24%) 0px 4px 9px;
     --box-shadow-doc: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
     --form-field-shadow: 0 0 0 1px var(--primary-color);
+    --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --card-shadow-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
     --secondary-color: #e5ecee;
     --light-secondary-color: #f0f7f8;
@@ -42,6 +44,9 @@
     --code-container-color: #FAFAFA;
     --divider-color: #dadadaf3;
     --like-color-btn: #adadad;
+    --sec-btn-color: #696b79;
+    --card-overlay-color: rgb(234, 234, 236, 0.6);
+    --card-overlay-text-color: #eaeaec;
 
     --primary-hover: #4F46E5;
     --secondary-hover: #E5E7EB;
