@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Card</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="stylesheet" href="/components/image/image.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539"> <i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                        <li>
+                            <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="/components/navigation/navigation.html">Navigation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">card</div>
+                    <div class="content-para">Cards are surfaces that are used to show user related data collectively,
+                        like product details.</div>
+                    <div class="divider"></div>
+
+                    <!-- Simple Card -->
+                    <div class="content-head">Simple Card</div>
+                    <div class="content-para">Simple Card (text only card) is the one that contains a title,can also
+                        include subtitle and a descriptive text.
+                    </div>
+                    <div class="component-example-div">
+                        <div class="card text-card">
+                            <h2 class="card-title">This is a Simple card</h2>
+                            <small class="card-subtitle">This is subtitle</small>
+                            <p class="card-content">Also known as text only card is the one that contains a title,can
+                                also
+                                include subtitle and a descriptive text.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520text-card%2522%253E%250A%2520%253Ch2%2520class%253D%2522card-title%2522%253EThis%2520is%2520a%2520Simple%2520card%253C%252Fh2%253E%250A%2520%253Csmall%2520class%253D%2522card-subtitle%2522%253EThis%2520is%2520subtitle%253C%252Fsmall%253E%250A%2520%253Cp%2520class%253D%2522card-content%2522%253EAlso%2520known%2520as%2520text%2520only%2520card%2520is%2520the%2520one%2520that%2520contains%2520a%2520title%252Ccan%2520also%250A%2520%2520%2520include%2520subtitle%2520and%2520a%2520descriptive%2520text.%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--Vertical card-->
+                    <div class="content-head">Vertical Card</div>
+                    <div class="content-para">Given below is vertical card along with image and text. You need to
+                        include class
+                        <span class="primary-txt-color">card</span> along with <span
+                            class="primary-txt-color">card-info</span> and<span class="primary-txt-color">
+                            card-call-to-action.</span> (e.g. <span class="primary-txt-color">class="card"</span>)
+                    </div>
+                    <div class="component-example-div">
+                        <div class="card">
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                        </div><i class="fas fa-heart like-btn"></i>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                        <p class="actual-price">₹1500</p>
+                                        <p class="price-percentage">(50% OFF)</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2520like-btn%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522actual-price%2522%253E%25E2%2582%25B91500%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522price-percentage%2522%253E%2850%2525%2520OFF%29%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--Horizontal card-->
+                    <div class="content-head">Horizontal Card</div>
+                    <div class="content-para">Given below is horizontal card along with image and text. You need to
+                        include class
+                        <span class="primary-txt-color">card</span> along with <span
+                            class="primary-txt-color">horizontal-card</span> and<span class="primary-txt-color">
+                            card-info, card-call-to-action.</span> (e.g. <span class="primary-txt-color">class="card
+                            horizontal-card"</span>)
+                    </div>
+                    <div class="component-example-div">
+                        <div class="card horizontal-card">
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                            <p class="card-paragraph">A premium quality checkered shirt. Available in
+                                                different colors.</p>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                    <button class="btn outline-btn-secondary">Move to wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520horizontal-card%2522%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--card with badge and dismiss-->
+                    <div class="content-head">Card with Badge and dismiss Button</div>
+                    <div class="content-para">Given below is vertical card and horizontal card along with badge and
+                        dismiss button. You need to
+                        include class
+                        <span class="primary-txt-color">card</span> along with <span
+                            class="primary-txt-color">horizontal-card</span>(for horizontal card) and<span
+                            class="primary-txt-color">
+                            card-info, card-call-to-action.</span> (e.g. <span class="primary-txt-color">class="card
+                            horizontal-card"</span>)
+                    </div>
+                    <div class="component-example-div card-container">
+                        <!-- VErtical Card with Badge and dismiss Button -->
+                        <div class="card">
+                            <span class="card-badge">New</span>
+                            <button class="card-close-btn"><i class="fas fa-times fa-md"></i></button>
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                        </div><i class="fas fa-heart like-btn"></i>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                        <p class="actual-price">₹1500</p>
+                                        <p class="price-percentage">(50% OFF)</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Horizontal Card with Badge and dismiss Button -->
+                        <div class="card horizontal-card">
+                            <span class="card-badge">New</span>
+                            <button class="card-close-btn"><i class="fas fa-times fa-md"></i></button>
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                            <p class="card-paragraph">A premium quality checkered shirt. Available in
+                                                different colors.</p>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                    <button class="btn outline-btn-secondary">Move to wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--Vertical%2520card--%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%253Cspan%2520class%253D%2522card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%253Cbutton%2520class%253D%2522card-close-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2520fa-md%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--Horizontal%2520card--%253E%250A%253Cdiv%2520class%253D%2522card%2520horizontal-card%2522%253E%250A%2520%253Cspan%2520class%253D%2522card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%253Cbutton%2520class%253D%2522card-close-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2520fa-md%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--card with Text Overlay-->
+                    <div class="content-head">Card with Text Overlay</div>
+                    <div class="content-para">Given below is vertical card and horizontal card text overlay on top. You
+                        need to
+                        include class
+                        <span class="primary-txt-color">card</span> along with <span
+                            class="primary-txt-color">horizontal-card</span>(for horizontal card) and<span
+                            class="primary-txt-color">
+                            card-info, card-call-to-action.</span> (e.g. <span class="primary-txt-color">class="card
+                            horizontal-card"</span>)
+                    </div>
+                    <div class="component-example-div card-container">
+                        <!-- VErtical Card text overlay-->
+                        <div class="card">
+                            <div class="overlay-container">
+                                <h2 class="overlay-text">Out of Stock</h2>
+                            </div>
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                        </div><i class="fas fa-heart like-btn"></i>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                        <p class="actual-price">₹1500</p>
+                                        <p class="price-percentage">(50% OFF)</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Horizontal Card with text overlay-->
+                        <div class="card horizontal-card">
+                            <div class="overlay-container">
+                                <h2 class="overlay-text">Out of Stock</h2>
+                            </div>
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                            <p class="card-paragraph">A premium quality checkered shirt. Available in
+                                                different colors.</p>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                    <button class="btn outline-btn-secondary">Move to wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--Vertical%2520card--%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%253Cdiv%2520class%253D%2522overlay-container%2522%253E%250A%2520%2520%253Ch2%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520Stock%253C%252Fh2%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--Horizontal%2520card--%253E%250A%253Cdiv%2520class%253D%2522card%2520horizontal-card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522overlay-container%2522%253E%250A%2520%2520%253Ch2%2520class%253D%2522overlay-text%2522%253EOut%2520of%2520Stock%253C%252Fh2%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!--card with shadow-->
+                    <div class="content-head">Card with shadow</div>
+                    <div class="content-para">Given below is vertical card and horizontal card with shadow. You need to
+                        include class
+                        <span class="primary-txt-color">card</span> along with <span
+                            class="primary-txt-color">card-shadow, horizontal-card</span>(for horizontal card) and<span
+                            class="primary-txt-color">
+                            card-info, card-call-to-action.</span> (e.g. <span class="primary-txt-color">class="card
+                            horizontal-card"</span>)
+                    </div>
+                    <div class="component-example-div card-container">
+                        <!-- VErtical Card with shadow -->
+                        <div class="card card-shadow">
+                            <span class="card-badge">New</span>
+                            <button class="card-close-btn"><i class="fas fa-times fa-md"></i></button>
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                        </div><i class="fas fa-heart like-btn"></i>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                        <p class="actual-price">₹1500</p>
+                                        <p class="price-percentage">(50% OFF)</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Horizontal Card with shadow-->
+                        <div class="card horizontal-card card-shadow">
+                            <span class="card-badge">New</span>
+                            <button class="card-close-btn"><i class="fas fa-times fa-md"></i></button>
+                            <!-- image -->
+                            <div class="card-image-container">
+                                <img class="responsive-img rounded-top-corner-img"
+                                    src="https://rukminim1.flixcart.com/image/660/792/k3t21zk0/shirt/g/j/g/m-wish0119-wrogn-original-imafmtz8cr8gkavz.jpeg?q=50"
+                                    alt="card-img">
+                            </div>
+
+                            <!-- card-info -->
+                            <div class="card-info-container">
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                            <p class="card-description">United Colors Of Benetton</p>
+                                            <p class="card-paragraph">A premium quality checkered shirt. Available in
+                                                different colors.</p>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹850</p>
+                                    </div>
+                                </div>
+                                <!-- call-to-actions -->
+                                <div class="card-call-to-action">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add to cart
+                                    </button>
+                                    <button class="btn outline-btn-secondary">Move to wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-container">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--Vertical%2520card--%253E%250A%253Cdiv%2520class%253D%2522card%2520card-shadow%2522%253E%250A%2520%253Cspan%2520class%253D%2522card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%253Cbutton%2520class%253D%2522card-close-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2520fa-md%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--Horizontal%2520card--%253E%250A%253Cdiv%2520class%253D%2522card%2520horizontal-card%2520card-shadow%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253Cbutton%2520class%253D%2522card-close-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2520fa-md%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%250A%2520%2520src%253D%2522https%253A%252F%252Frukminim1.flixcart.com%252Fimage%252F660%252F792%252Fk3t21zk0%252Fshirt%252Fg%252Fj%252Fg%252Fm-wish0119-wrogn-original-%2520%2520%2520%2520imafmtz8cr8gkavz.jpeg%253Fq%253D50%2522%2520alt%253D%2522card-img%2522%253E%250A%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-paragraph%2522%253EA%2520premium%2520quality%2520checkered%2520shirt.%2520Available%2520in%2520different%2520colors.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520outline-btn-secondary%2522%253EMove%2520to%2520wishlist%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <script src="/js/sidebar.js"></script>
+</body>
+
+</html>

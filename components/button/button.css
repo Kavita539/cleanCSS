@@ -4,11 +4,12 @@
     color: var(--pure-white);
     min-width: 6rem;
     width: max-content;
-    padding: 0.8rem var(--padding-sm);
+    padding: var(--padding-xs) var(--padding-sm);
     border-radius: 1px;
     border: none;
     transition: all .3s ease-in-out;
-    margin: 10px;
+    margin: 9px;
+    border-radius: 8px;
 }
 
 .text-icon-btn{
@@ -30,7 +31,7 @@
 
 .btn-secondary{
     background-color: var(--secondary-color);
-    color : var(--black);
+    color : var(--btn-txt-color);
 }
 
 .btn-error{
@@ -58,31 +59,32 @@
 }
 
 .outline-btn{
-    background-color: var(--doc-section-color);
+    background-color: transparent;
     border: 1px solid var(--default-color);
     color : var(--default-color);
+    border-radius: 8px;
 }
 
 .outline-btn-primary{
-    background-color: var(--doc-section-color);
+    background-color: transparent;
     border: 1px solid var(--primary-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .outline-btn-secondary{
-    background-color: var(--doc-section-color);
+    background-color: transparent;
     border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--sec-btn-color);
 }
 
 .outline-btn-error{
-    background-color: var(--doc-section-color);
+    background-color: transparent;
     border: 1px solid var(--danger-color);
     color: var(--danger-color);
 }
 
 .outline-btn-success{
-    background-color: var(--doc-section-color);
+    background-color: transparent;
     border: 1px solid var(--success-color);
     color: var(--success-color);
 }
