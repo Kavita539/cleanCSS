@@ -21,7 +21,7 @@
     color: var(--primary-color);
     border: none;
     width: 2rem;
-    background-color: var(--bg-color-primary);
+    background-color: var(--bg-color);
   }
 
 .close-btn {
