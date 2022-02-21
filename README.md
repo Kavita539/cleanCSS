@@ -7,6 +7,12 @@
 
 [clean.css](https://cleancss.netlify.app/) is a free set of small and responsive CSS modules, provides ready-to-use frontend components that can be used for quick creation of websites.
 
+  <font size="5">Technology Used : </font>  
+
+  1. HTML
+  2. CSS
+  3. Javascript
+
   <font size="5">How to set it up?</font>  
 
   To get the styles of the components and the JavaScript functionality, add the following line of code in the head tag of your HTML document.  
@@ -113,6 +119,9 @@ Responsive [Image](https://cleancss.netlify.app/components/image/image.html) Com
 # Preview
 
 ![cleancss.gif](/Assets/cleancss.gif)
+
+
+
 
 
 
