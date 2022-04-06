@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Rating</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="rating.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539/cleanCSS"> <i
+                            class="fab fa-github fa-lg"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                        <li>
+                            <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="/components/navigation/navigation.html">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="/components/modal/modal.html">Modal</a>
+                        </li>
+                        <li>
+                            <a href="/components//toast/toast.html">Toast</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components/rating/rating.html">Rating</a>
+                        </li>
+                        <li>
+                            <a href="/components/slider/slider.html">Slider</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">Rating</div>
+                    <div class="content-para">Rating is very useful to store user feedback, especially in e-commerce
+                        applications. It is also appealing to user, so a very famous part of component library.</div>
+                    <div class="divider"></div>
+
+                    <!-- Types of Toast-->
+                    <div class="content-head">Star Rating</div>
+                    <div class="content-para">Given below is an example of star rating.
+                    </div>
+                    <div class="component-example-div rating-container">
+
+
+                        <div class="rating-field-container">
+                            <label>
+                                <input class="rating-star-input" type="checkbox" checked disabled />
+                                <i class="fas fa-star rating-star-icon"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" checked disabled />
+                                <i class="fas fa-star rating-star-icon"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" checked disabled />
+                                <i class="fas fa-star rating-star-icon"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" disabled />
+                                <i class="fas fa-star rating-star-icon"></i>
+                            </label>
+                            <label>
+                                <input class="rating-star-input" type="checkbox" disabled />
+                                <i class="fas fa-star rating-star-icon"></i>
+                            </label>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="code-container">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating-field-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520checked%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522rating-star-input%2522%2520type%253D%2522checkbox%2522%2520disabled%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-star-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                                style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="toast.js"></script>
+        <script src="/js/sidebar.js"></script>
+</body>
+
+</html>
