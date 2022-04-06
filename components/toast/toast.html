@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Toast</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="toast.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539/cleanCSS"> <i
+                            class="fab fa-github fa-lg"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                        <li>
+                            <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="/components/navigation/navigation.html">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="/components/modal/modal.html">Modal</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components//toast/toast.html">Toast</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">Toast</div>
+                    <div class="content-para">Toast is mostly used to show feedback messages and generally disappear
+                        after some time. They are useful while giving feedback to the user.</div>
+                    <div class="divider"></div>
+
+                    <!-- Types of Toast-->
+                    <div class="content-head">Toast Variants</div>
+                    <div class="content-para">Given below are types of toast.
+                    </div>
+                    <div class="component-example-div toast-container">
+
+
+                        <!-- Success toast -->
+                        <div class="toast success-toast">
+                            <span>Order is placed!!</span>
+                            <div class="toast-cta">
+                                <a class="toast-link" href="#">Details</a>
+                                <button class="toast-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- error toast -->
+                        <div class="toast error-toast">
+                            <span>Can't send photo. Retry in 5 seconds.</span>
+                            <div class="toast-cta">
+                                <a class="toast-link" href="#">RETRY</a>
+                                <button class="toast-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="content-head">Live Demo</div>
+                    <div class="content-para">Given below are the live demo of toasts.
+                    </div>
+                    <div class="component-example-div modal-container">
+                        <button class="btn btn-primary toast-demo-btn">Success Toast</button>
+                        <button class="btn btn-primary toast-demo-btn">Error Toast</button>
+
+                        <!-- Success toast will be displayed in top right corner-->
+                        <div class="toast success-toast toast-top-right">
+                            <span>Order is placed!!</span>
+                            <div class="toast-cta">
+                                <a class="toast-link" href="#">Details</a>
+                                <button class="toast-btn toast-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- error toast will be displayed in bottom center-->
+                        <div class="toast error-toast toast-bottom-center">
+                            <span>Can't send photo. Retry in 5 seconds.</span>
+                            <div class="toast-cta">
+                                <a class="toast-link" href="#">RETRY</a>
+                                <button class="toast-btn toast-close-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="code-container">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253C%21--%2520Success%2520toast%2520--%253E%250A%253Cdiv%2520class%253D%2522toast%2520success-toast%2522%253E%250A%253Cspan%253EOrder%2520is%2520placed%21%21%253C%252Fspan%253E%250A%253Cdiv%2520class%253D%2522toast-cta%2522%253E%250A%253Ca%2520class%253D%2522toast-link%2522%2520href%253D%2522%2523%2522%253EDetails%253C%252Fa%253E%250A%253Cbutton%2520class%253D%2522toast-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520error%2520toast%2520--%253E%250A%253Cdiv%2520class%253D%2522toast%2520error-toast%2522%253E%250A%253Cspan%253ECan%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%253C%252Fspan%253E%250A%253Cdiv%2520class%253D%2522toast-cta%2522%253E%250A%253Ca%2520class%253D%2522toast-link%2522%2520href%253D%2522%2523%2522%253ERETRY%253C%252Fa%253E%250A%253Cbutton%2520class%253D%2522toast-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="toast.js"></script>
+        <script src="/js/sidebar.js"></script>
+</body>
+
+</html>
