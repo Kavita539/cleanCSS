@@ -1,0 +1,71 @@
+@import url(/components/button/button.css);
+@import url(/components/textUtilities/textUtilities.css);
+
+.toast {
+    align-items: center;
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 3.2px;
+    column-gap: var(--padding-sm);
+    align-items: baseline;
+    display: flex;
+}
+
+.toast-container {
+    gap: 1rem;
+}
+
+.toast-cta {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.toast-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.toast-btn {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: var(--padding-xxxs) var(--padding-xs);
+    border-radius: 50%;
+}
+
+.toast-btn:hover {
+    opacity: 0.7;
+}
+
+.general-toast {
+    background-color: var(--active-color);
+}
+
+.success-toast {
+    background-color: var(--success-color);
+}
+
+.error-toast {
+    background-color: var(--danger-color);
+}
+
+.toast-bottom-center {
+    position: fixed;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0.625rem;
+    display: none;
+}
+
+.toast-top-right {
+    position: fixed;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+}
