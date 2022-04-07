@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean.CSS | Simplified Grid</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/documentation/get-started.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="stylesheet" href="/components/textUtilities/textUtilities.css">
+    <link rel="stylesheet" href="/components/card/card.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <button id="menu-icon-button" class="burger-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="link-no-style" href="./">
+                    <div class="logo-title">clean<span class="logo-and-symbol-style">.CSS</span>
+                    </div>
+                    <div class="logo-tagline">UI LIBRARY OF CLEAN CODE</div>
+                </a></div>
+
+            <ul class="right-nav">
+                <li class="navlist-link"><a href="/index.html">Home</a></li>
+                <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
+                <li>
+                    <a class="navlist-link" href="https://github.com/Kavita539/cleanCSS"> <i
+                            class="fab fa-github fa-lg"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="doc-container">
+            <div id="sidebar-container" class="sidebar-container">
+                <button id="close-btn" class="close-btn">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+                <div class="nested-list-container">
+                    <div class="list-topic" class="btn-display">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/documentation/get-started.html">
+                                Introduction
+                            </a>
+                        </li>
+                </div>
+
+                <div class="nested-list-container">
+                    <div class="list-topic">
+                        <a href="/">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="/components/alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="/components/badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="/components/button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="/components/card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="/components/image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="/components/input/input.html">Input</a>
+                        </li>
+                        <li>
+                            <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="/components/navigation/navigation.html">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="/components/modal/modal.html">Modal</a>
+                        </li>
+                        <li>
+                            <a href="/components//toast/toast.html">Toast</a>
+                        </li>
+                        <li>
+                            <a href="/components/rating/rating.html">Rating</a>
+                        </li>
+                        <li>
+                            <a href="/components/slider/slider.html">Slider</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components/simplified-grid/grid.html">Simplified Grid</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doc-content" class="doc-content">
+                <div class="wrapper-shadow">
+                    <div class="content-title">Simplified Grid</div>
+                    <div class="content-para">Grids are crucial part of any website for the layout. It is mjorly used in
+                        e-commerce applications and mostly in other applications too for layout purpose making it
+                        responsive.</div>
+                    <div class="divider"></div>
+
+                    <!-- Two column-->
+                    <div class="content-head">Two Column Layout(50:50)</div>
+                    <h1 class="content-para">Given below is an example of two column layout of grid which will be
+                        divide into two equal parts.
+                    </h1>
+                    <div class="component-example-div">
+
+                        <div class="grid-container">
+                            <div class="grid-50-50">
+                                <div>
+                                    <img class="responsive-img"
+                                        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg"
+                                        alt="responsive-image" />
+                                </div>
+                                <div class="styled-text-container">
+                                    <h1 class="text-bold text-xl">Check such more pictures like these.</h1>
+                                    <button class="btn btn-primary">Check it!!</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="code-container">
+                            <code>
+                                <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-50-50%2522%253E%250A%253Cdiv%253E%250A%253Cimg%2520class%253D%2522responsive-img%2522%250Asrc%253D%2522https%253A%252F%252Fassets.myntassets.com%252Ff_webp%252Cdpr_1.5%252Cq_60%252Cw_210%252Cc_limit%252Cfl_progressive%252Fassets%252Fimages%252F1364628%252F2016%252F8%252F31%252F11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg%2522%250Aalt%253D%2522responsive-image%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522styled-text-container%2522%253E%250A%253Ch1%2520class%253D%2522text-bold%2520text-xl%2522%253ECheck%2520such%2520more%2520pictures%2520like%2520these.%253C%252Fh1%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ECheck%2520it%21%21%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                              </iframe>
+                            </code>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <!-- Three colum-->
+                        <div class="content-head">Three Column Layout</div>
+                        <h1 class="content-para">Given below is an example of three column layout of grid which will be
+                            divide into three equal parts.
+                        </h1>
+                        <div class="component-example-div">
+
+                            
+                                <div class="grid-3-column">
+                                    <div class="card">
+                                        <!-- image -->
+                                        <div class="card-image-container">
+                                            <img class="responsive-img rounded-top-corner-img"
+                                                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg"
+                                                alt="card-img">
+                                        </div>
+
+                                        <!-- card-info -->
+                                        <div class="card-info-container">
+                                            <div class="card-info">
+                                                <div class="card-title">
+                                                    <div>
+                                                        <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                                        <p class="card-description">United Colors Of Benetton</p>
+                                                    </div><i class="fas fa-heart like-btn"></i>
+                                                </div>
+                                                <div class="price">
+                                                    <p class="discount-price">₹850</p>
+                                                    <p class="actual-price">₹1500</p>
+                                                    <p class="price-percentage">(50% OFF)</p>
+                                                </div>
+                                            </div>
+                                            <!-- call-to-actions -->
+                                            <div class="card-call-to-action">
+                                                <button class="btn btn-primary">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <!-- image -->
+                                        <div class="card-image-container">
+                                            <img class="responsive-img rounded-top-corner-img"
+                                                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg"
+                                                alt="card-img">
+                                        </div>
+
+                                        <!-- card-info -->
+                                        <div class="card-info-container">
+                                            <div class="card-info">
+                                                <div class="card-title">
+                                                    <div>
+                                                        <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                                        <p class="card-description">United Colors Of Benetton</p>
+                                                    </div><i class="fas fa-heart like-btn"></i>
+                                                </div>
+                                                <div class="price">
+                                                    <p class="discount-price">₹850</p>
+                                                    <p class="actual-price">₹1500</p>
+                                                    <p class="price-percentage">(50% OFF)</p>
+                                                </div>
+                                            </div>
+                                            <!-- call-to-actions -->
+                                            <div class="card-call-to-action">
+                                                <button class="btn btn-primary">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <!-- image -->
+                                        <div class="card-image-container">
+                                            <img class="responsive-img rounded-top-corner-img"
+                                                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg"
+                                                alt="card-img">
+                                        </div>
+
+                                        <!-- card-info -->
+                                        <div class="card-info-container">
+                                            <div class="card-info">
+                                                <div class="card-title">
+                                                    <div>
+                                                        <h3 class="card-title-header">Men Slim Fit Shirt</h3>
+                                                        <p class="card-description">United Colors Of Benetton</p>
+                                                    </div><i class="fas fa-heart like-btn"></i>
+                                                </div>
+                                                <div class="price">
+                                                    <p class="discount-price">₹850</p>
+                                                    <p class="actual-price">₹1500</p>
+                                                    <p class="price-percentage">(50% OFF)</p>
+                                                </div>
+                                            </div>
+                                            <!-- call-to-actions -->
+                                            <div class="card-call-to-action">
+                                                <button class="btn btn-primary">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+
+                            <div class="code-container">
+                                <code>
+                                    <iframe
+                                    src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-3-column%2522%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%253C%21--%2520image%2520--%253E%250A%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fassets.myntassets.com%252Ff_webp%252Cdpr_1.5%252Cq_60%252Cw_210%252Cc_limit%252Cfl_progressive%252Fassets%252Fimages%252F1364628%252F2016%252F8%252F31%252F11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg%2522%250Aalt%253D%2522card-img%2522%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520card-info%2520--%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%253Cdiv%253E%250A%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%253C%252Fdiv%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2520like-btn%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522price%2522%253E%250A%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%253Cp%2520class%253D%2522actual-price%2522%253E%25E2%2582%25B91500%253C%252Fp%253E%250A%253Cp%2520class%253D%2522price-percentage%2522%253E%2850%2525%2520OFF%29%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%253C%21--%2520image%2520--%253E%250A%253Cdiv%2520class%253D%2522card-image-container%2522%253E%250A%253Cimg%2520class%253D%2522responsive-img%2520rounded-top-corner-img%2522%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fassets.myntassets.com%252Ff_webp%252Cdpr_1.5%252Cq_60%252Cw_210%252Cc_limit%252Cfl_progressive%252Fassets%252Fimages%252F1364628%252F2016%252F8%252F31%252F11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg%2522%250Aalt%253D%2522card-img%2522%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520card-info%2520--%253E%250A%253Cdiv%2520class%253D%2522card-info-container%2522%253E%250A%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%253Cdiv%253E%250A%253Ch3%2520class%253D%2522card-title-header%2522%253EMen%2520Slim%2520Fit%2520Shirt%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522card-description%2522%253EUnited%2520Colors%2520Of%2520Benetton%253C%252Fp%253E%250A%253C%252Fdiv%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2520like-btn%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522price%2522%253E%250A%253Cp%2520class%253D%2522discount-price%2522%253E%25E2%2582%25B9850%253C%252Fp%253E%250A%253Cp%2520class%253D%2522actual-price%2522%253E%25E2%2582%25B91500%253C%252Fp%253E%250A%253Cp%2520class%253D%2522price-percentage%2522%253E%2850%2525%2520OFF%29%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-call-to-action%2522%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%253C%21--%2520image%2520--%253E%250A%253Cdiv%2520class%253D%2522card-image-con"
+                                    style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                                    sandbox="allow-scripts allow-same-origin">
+                                  </iframe>
+                                </code>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <script src="toast.js"></script>
+                <script src="/js/sidebar.js"></script>
+</body>
+
+</html>
