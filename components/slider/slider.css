@@ -1,0 +1,5 @@
+.slider-container {
+    accent-color: var(--primary-light-color);
+    display: block;
+    width: 100%;
+}
