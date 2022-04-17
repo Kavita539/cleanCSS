@@ -12,6 +12,7 @@
     left: 0;
     border-right: 2px solid var(--dark-primary-color);
     box-shadow: var(--box-shadow-btn);
+    overflow-y: scroll;
 }
 
 .burger-menu-button {
@@ -43,7 +44,7 @@
 .list-topic a{
     color: var(--sidebar-list-topic);
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 

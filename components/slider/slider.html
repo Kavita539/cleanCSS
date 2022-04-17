@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clean.CSS | Navigation</title>
+    <title>clean.CSS | Slider</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="stylesheet" href="/documentation/get-started.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="/components/avatar/avatar.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 
 <body>
@@ -30,7 +29,8 @@
                 <li class="navlist-link"><a href="/index.html">Home</a></li>
                 <li class="navlist-link"><a href="/documentation/get-started.html">Docs</a></li>
                 <li>
-                    <a class="navlist-link" href="https://github.com/Kavita539/cleanCSS"> <i class="fab fa-github fa-lg"></i></a>
+                    <a class="navlist-link" href="https://github.com/Kavita539/cleanCSS"> <i
+                            class="fab fa-github fa-lg"></i></a>
                 </li>
             </ul>
         </nav>
@@ -87,20 +87,21 @@
                             <a href="/components/list/list.html">List</a>
                         </li>
                         <li>
-                            <a class="active" href="/components/navigation/navigation.html">Navigation</a>
+                            <a href="/components/navigation/navigation.html">Navigation</a>
                         </li>
                         <li>
                             <a href="/components/modal/modal.html">Modal</a>
                         </li>
                         <li>
-                            <a href="/components/toast/toast.html">Toast</a>
+                            <a href="/components//toast/toast.html">Toast</a>
                         </li>
                         <li>
                             <a href="/components/rating/rating.html">Rating</a>
                         </li>
                         <li>
-                            <a href="/components/slider/slider.html">Slider</a>
+                            <a class="active" href="/components/slider/slider.html">Slider</a>
                         </li>
+                        
                         <li>
                             <a href="/components/simplified-grid/grid.html">Simplified Grid</a>
                         </li>
@@ -109,51 +110,53 @@
             </div>
             <div id="doc-content" class="doc-content">
                 <div class="wrapper-shadow">
-                    <div class="content-title">Navigation</div>
-                    <div class="content-para">Navigation bar is used to navigate through the web apps or websites. This
-                        navigation component is responsive. It is a hamburger menu in medium and small devices.</div>
+                    <div class="content-title">Slider</div>
+                    <div class="content-para">The sliders allow user to select value from the range along the bar. It is
+                        very helpful in e-commerce applications while checking the price range.</div>
                     <div class="divider"></div>
 
-                    <!-- SIMPLE ALERT -->
-                    <div class="content-head">simple Navigation</div>
-                    <div class="content-para">Given below is the example of simple navigation.
+                    <!-- Types of Toast-->
+                    <div class="content-head">Simple Slider</div>
+                    <div class="content-para">Given below is an example of simple slider.
                     </div>
-                    <div class="component-example-div navbar-container">
-                        <nav class="navbar">
-                            <div class="left-navbar">
-                                <button id="menu-icon-button" class="burger-menu-button">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                                <a class="link-no-style" href="./">
-                                    <div class="nav-logo-title">LogoName
-                                    </div>
-                                    <div class="nav-logo-tagline">Your Tagline!</div>
-                                </a></div>
+                    <div class="component-example-div">
 
-                            <ul class="right-navbar">
-                                <li class="navlist-link-item"><a href="/">Home</a></li>
-                                <li class="navlist-link-item"><a href="/">Docs</a></li>
-                                <li>
-                                    <a class="navlist-link-item" href="/"> <i class="fab fa-github fa-lg"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="slider-container">
+
+                            <input type="range" min="0" max="10" step="1" value="3" list="tickmarks" class="slider" />
+                            <datalist id="tickmarks">
+                                <option value="0"></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                                <option value="6"></option>
+                                <option value="7"></option>
+                                <option value="8"></option>
+                                <option value="9"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </div>
+
 
                     </div>
+
 
                     <div class="code-container">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%253Cdiv%2520class%253D%2522left-navbar%2522%253E%250A%2520%2520%253Cbutton%2520id%253D%2522menu-icon-button%2522%2520class%253D%2522burger-menu-button%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Ca%2520class%253D%2522link-no-style%2522%2520href%253D%2522.%252F%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-title%2522%253ELogoName%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-tagline%2522%253EYour%2520Tagline%21%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fa%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cul%2520class%253D%2522right-navbar%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522navlist-link-item%2522%253E%253Ca%2520href%253D%2522%252F%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522navlist-link-item%2522%253E%253Ca%2520href%253D%2522%252F%2522%253EDocs%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%253Cli%253E%2520%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522navlist-link-item%2522%2520href%253D%2522%252F%2522%253E%2520%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+                                src="https://carbon.now.sh/embed?bg=rgba%2899%2C102%2C241%2C1%29&t=night-owl&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%252210%2522%2520step%253D%25221%2522%2520value%253D%25223%2522%2520list%253D%2522tickmarks%2522%2520class%253D%2522slider%2522%2520%252F%253E%250A%2520%253Cdatalist%2520id%253D%2522tickmarks%2522%253E%250A%2520%2520%253Coption%2520value%253D%25220%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25221%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25222%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25223%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25224%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25225%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25226%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25227%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25228%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25229%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%252210%2522%253E%253C%252Foption%253E%250A%2520%253C%252Fdatalist%253E%250A%253C%252Fdiv%253E"
                                 style="width: 100%; height: 360px; border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </code>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
+        <script src="toast.js"></script>
         <script src="/js/sidebar.js"></script>
 </body>
 
